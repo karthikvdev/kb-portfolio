@@ -1,0 +1,31 @@
+.footer-container {
+    display: grid;
+    grid-template-columns: 15% 15% 55% 15%;
+    color: #607B96;
+
+    .center-menu {
+        border: 0.50px #1E2D3D solid;
+        display: grid;
+        padding: unset;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        width: 100%;
+    }
+    .icon-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .github-menu{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .menu {
+        border: 0.50px #1E2D3D solid;
+        padding: 10px;
+        color: #607B96 !important;
+        text-decoration: none;
+    }
+}
