@@ -1,7 +1,6 @@
-
-
 import React from 'react'
 import "./style.scss"
+import PageWrapper from '../../hoc';
 
 const Home = () => {
     return (
@@ -9,4 +8,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default PageWrapper(Home);
