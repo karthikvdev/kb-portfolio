@@ -6,6 +6,7 @@ import GitHubIcon from '../../assests/icons/github'
 import TwitterIcon from '../../assests/icons/twitter'
 import FacebookIcon from '../../assests/icons/facebook'
 import Instagram from '../../assests/icons/instagram'
+import LinkedInIcon from '../../assests/icons/linkedin'
 
 const Footer = () => {
 
@@ -13,7 +14,8 @@ const Footer = () => {
     { label: <TwitterIcon />, to: ROUTES.HOME },
     { label: <FacebookIcon />, to: ROUTES.HOME },
     { label: <Instagram />, to: ROUTES.HOME },
-    
+    { label: <LinkedInIcon />, to: ROUTES.HOME }
+
   ]
 
   return (

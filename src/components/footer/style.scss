@@ -1,13 +1,13 @@
 .footer-container {
     display: grid;
-    grid-template-columns: 15% 15% 55% 15%;
+    grid-template-columns: 10% 15% 60% 15%;
     color: #607B96;
 
     .center-menu {
         border: 0.50px #1E2D3D solid;
         display: grid;
         padding: unset;
-        grid-template-columns: 33.33% 33.33% 33.33%;
+        grid-template-columns: 25% 25% 25% 25%;
         width: 100%;
     }
     .icon-container{
