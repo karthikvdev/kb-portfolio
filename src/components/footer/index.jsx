@@ -1,6 +1,6 @@
 import React from 'react'
 import "./style.scss"
-import { NAMES, ROUTES, URLS } from '../../common/constants'
+import { NAMES, URLS } from '../../common/constants'
 import { Link } from 'react-router-dom'
 import GitHubIcon from '../../assests/icons/github'
 import TwitterIcon from '../../assests/icons/twitter'
