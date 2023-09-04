@@ -4,6 +4,7 @@ import { ROUTES } from "../common/constants";
 import About from "../pages/about";
 import Contact from "../pages/contact";
 import Projects from "../pages/projects";
+import Skills from "../pages/skills";
 
 
 const Routing = () => {
@@ -15,6 +16,7 @@ const Routing = () => {
                     <Route path={ROUTES.ABOUT} element={<About />} />
                     <Route path={ROUTES.CONTACT} element={<Contact />} />
                     <Route path={ROUTES.PROJECTS} element={<Projects />} />
+                    <Route path={ROUTES.SKILLS} element={<Skills />} />
                 </Routes>
             </BrowserRouter>
         </>
