@@ -1,23 +1,23 @@
 import React from 'react'
 import "./style.scss"
-import { ROUTES } from '../../common/constants'
-import { Link } from 'react-router-dom'
+import { NAMES, ROUTES } from '../../common/constants'
+import { Link, useLocation } from 'react-router-dom'
 
 const Header = () => {
-
+    const location = useLocation()
     const centerMenu = [
-        { label: "_hello", to: ROUTES.HOME },
         { label: "_about-me", to: ROUTES.ABOUT },
+        { label: "_skills", to: ROUTES.SKILLS },
         { label: "_projects", to: ROUTES.PROJECTS },
     ]
 
     return (
         <div className='header-container'>
-            <Link className='menu' to={ROUTES.HOME}>karthik-balaji</Link>
-            <div className='center-menu'>
-                {centerMenu?.map((menu, index) => <Link key={index} className='menu' to={menu.to}>{menu?.label}</Link>)}
+            <Link className='menu' to={ROUTES.HOME}>{NAMES.USER_NAME}</Link>
+            <div className='center-menu text-align'>
+                {centerMenu?.map((menu, index) => <Link key={index} className={`menu ${location.pathname === menu.to ? 'active' : ''}`} to={menu.to}>{menu?.label}</Link>)}
             </div>
-            <Link className='menu' to={ROUTES.CONTACT}>_contact-me</Link>
+            <Link className={`menu ${location.pathname === ROUTES.CONTACT ? 'active' : ''}`} to={ROUTES.CONTACT}>_contact-me</Link>
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import "./style.scss"
-import { ROUTES, URLS } from '../../common/constants'
+import { NAMES, ROUTES, URLS } from '../../common/constants'
 import { Link } from 'react-router-dom'
 import GitHubIcon from '../../assests/icons/github'
 import TwitterIcon from '../../assests/icons/twitter'
@@ -11,10 +11,10 @@ import LinkedInIcon from '../../assests/icons/linkedin'
 const Footer = () => {
 
   const centerMenu = [
-    { label: <TwitterIcon />, to: ROUTES.HOME },
-    { label: <FacebookIcon />, to: ROUTES.HOME },
-    { label: <Instagram />, to: ROUTES.HOME },
-    { label: <LinkedInIcon />, to: ROUTES.HOME }
+    { label: <TwitterIcon />, to: URLS.TWITTER },
+    { label: <FacebookIcon />, to: URLS.FACEBOOK },
+    { label: <Instagram />, to: URLS.INSTAGRAM },
+    { label: <LinkedInIcon />, to: URLS.LINKEDIN }
 
   ]
 
@@ -22,10 +22,10 @@ const Footer = () => {
     <div className='footer-container'>
       <div className='menu'>Find me in:</div>
       <div className='center-menu'>
-        {centerMenu?.map((menu, index) => <Link key={index} className='menu icon-container' to={menu.to}>{menu?.label}</Link>)}
+        {centerMenu?.map((menu, index) => <Link key={index} className='menu icon-container' target="_blank" to={menu.to}>{menu?.label}</Link>)}
       </div>
       <div className='menu'></div>
-      <Link className='menu github-menu' to={URLS.GITHUB} target="_blank">@karthikvdev<GitHubIcon /></Link>
+      <Link className='menu github-menu' to={URLS.GITHUB} target="_blank">{NAMES.GITHUB}<GitHubIcon /></Link>
     </div >
   )
 }
