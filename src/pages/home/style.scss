@@ -10,6 +10,7 @@
         display: grid;
         grid-template-columns: 50% 50%;
         width: 100%;
+        align-items: center;
 
         .left-pane {
             text-align: center;
@@ -21,14 +22,120 @@
             .title {
                 font-size: 62px;
             }
-            .role{
+
+            .role {
                 font-size: 32px;
                 color: #4D5BCE;
+
+                .cursor {
+                    animation: blink 1s infinite;
+                }
             }
         }
 
         .right-pane {
-            position: relative;
+            height: 100%;
         }
+    }
+}
+
+
+
+
+.typewriter {
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typewriter svg {
+    padding-right: 2em;
+}
+
+.typewriter p {
+    color: #4D5BCE;
+    font-size: 3em;
+    font-weight: 500;
+    width: 0;
+    max-width: max-content;
+    overflow: hidden;
+    border-right: .05em solid #464545;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0;
+    /* Gives that scrolling effect as the typing happens */
+}
+
+.text {
+    height: 3rem;
+    overflow: hidden;
+}
+
+.wrapper {
+    animation: slide-text 20s steps(1, end) infinite;
+}
+
+.wrapper p {
+    margin: 1rem 0;
+    animation:
+        typing-erase 5s steps(80, end) infinite,
+        blink-caret .5s step-end infinite;
+}
+
+/* The type and erase effect */
+@keyframes typing-erase {
+    0% {
+        width: 0.5%;
+        // visibility: hidden;
+    }
+
+    50%,
+    70% {
+        // visibility: visible;
+        width: 100%
+    }
+
+    90%,
+    100% {
+        // visibility: hidden;
+        width: 0.5%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: gray
+    }
+}
+
+@keyframes slide-text {
+
+    0%,
+    25% {
+        transform: translateY(-1rem)
+    }
+
+    25%,
+    50% {
+        transform: translateY(-4.7rem)
+    }
+
+    50%,
+    75% {
+        transform: translateY(-8.7rem)
+    }
+
+    75%,
+    100% {
+        transform: translateY(8.7rem)
     }
 }
