@@ -8,7 +8,7 @@ const PageWrapper = (WrappedComponent, data) => {
     return (props) => {
         return <>
             <Header />
-            <div className="main-container">
+            <div className={data?.isSideBar ? "main-container" : ""}>
                 {data?.isSideBar && <SideBar />}
                 <WrappedComponent {...props} />
             </div>
