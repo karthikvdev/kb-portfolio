@@ -17,7 +17,7 @@ const Header = () => {
             <div className='center-menu text-align'>
                 {centerMenu?.map((menu, index) => <Link key={index} className={`menu ${location.pathname === menu.to ? 'active' : ''}`} to={menu.to}>{menu?.label}</Link>)}
             </div>
-            <Link className={`menu ${location.pathname === ROUTES.CONTACT ? 'active' : ''}`} to={ROUTES.CONTACT}>_contact-me</Link>
+            <Link className={`menu ${location.pathname === ROUTES.CONTACT ? 'active' : ''} text-align`} to={ROUTES.CONTACT}>_contact-me</Link>
         </div>
     )
 }

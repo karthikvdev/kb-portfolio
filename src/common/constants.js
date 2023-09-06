@@ -13,6 +13,8 @@ export const URLS = {
     INSTAGRAM: "https://www.instagram.com/karthikbalaji_26/"
 }
 export const NAMES = {
-    GITHUB:"@karthikvdev",
-    USER_NAME:"karthik-balaji"
+    GITHUB: "@karthikvdev",
+    USER_NAME: "karthik-balaji",
+    EMAIL: "karthikbalaji.dev@gmail.com",
+    MOBILE: "9941145566"
 }
