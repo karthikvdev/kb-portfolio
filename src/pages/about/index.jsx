@@ -8,4 +8,4 @@ const About = () => {
     )
 }
 
-export default PageWrapper(About)
+export default PageWrapper(About, { isSideBar: true })
