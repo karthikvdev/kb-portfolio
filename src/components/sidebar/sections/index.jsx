@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import SectionOpen from '../../../assests/sibebar-icons/section-open';
 import "./style.scss"
+import SectionOpen from '../../../assests/sibebar-icons/section-open';
+import SectionClose from '../../../assests/sibebar-icons/section-close';
 const SibebarSection = ({ menu, children }) => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -11,8 +12,8 @@ const SibebarSection = ({ menu, children }) => {
 
     return (
         <div className='sidebar-sections' onClick={handleOnOpen}>
-            <div className='name-wrapper'>{<SectionOpen styles={!isOpen ? { rotate: "270deg" } : {}} />} {menu?.icon} <span>{menu?.name}</span></div>
-            {isOpen && <div>
+            <div className='name-wrapper'>{isOpen ? <SectionOpen /> : <SectionClose styles={{ rotate: "270deg" }} />} {menu?.icon && <span className='icon-wrapper'>{menu?.icon}</span>}<span>{menu?.name}</span></div>
+            {isOpen && children && <div className='inner-section'>
                 {children}
             </div>}
         </div>

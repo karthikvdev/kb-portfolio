@@ -1,7 +1,14 @@
 .sidebar-sections{
     cursor: pointer;
+    padding: 5px;
 }
 .name-wrapper{
     display: flex;
     align-items: center;
+}
+.icon-wrapper{
+    margin: 0 5px;
+}
+.inner-section{
+    padding: 10px;
 }
