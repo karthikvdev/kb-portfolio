@@ -1,6 +1,12 @@
-.side-menu-bar{
-    .navigation-btn{
+.side-menu-bar {
+    padding: 5px;
+
+    .navigation-btn {
         color: #fff;
         text-decoration: none;
+    }
+
+    .inner-icon-section {
+        margin: 0 5px;
     }
 }

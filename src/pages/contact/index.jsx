@@ -8,4 +8,4 @@ const Contact = () => {
     )
 }
 
-export default PageWrapper(Contact)
+export default PageWrapper(Contact, { isSideBar: true })
