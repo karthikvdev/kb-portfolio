@@ -2,6 +2,7 @@ import React from 'react';
 import PageWrapper from '../../hoc';
 import "./styles.scss";
 import FolderIcon from "../../assests/sibebar-icons/folder-icon";
+import { useSearchParams } from 'react-router-dom';
 
 const sidebar = [{
     name: "programming-languages",
@@ -158,8 +159,11 @@ const sidebar = [{
     }]
 }]
 const Skills = () => {
+
+    const [searchParams] = useSearchParams();
+
     return (
-        <div>Skills</div>
+        <div>Skills - {searchParams?.get("to")}</div>
     )
 }
 

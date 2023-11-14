@@ -6,12 +6,12 @@ const SibebarSection = ({ menu, children }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleOnOpen = (event) => {
-        event.stopPropagation();
+        event?.stopPropagation();
         setIsOpen(!isOpen)
     }
 
     return (
-        <div className='sidebar-sections' onClick={handleOnOpen}>
+        <div className='sidebar-sections' tabIndex={0} onKeyDown={(e) => e?.key === "Enter" && handleOnOpen()} onClick={handleOnOpen}>
             <div className='name-wrapper'>{isOpen ? <SectionOpen /> : <SectionClose styles={{ rotate: "270deg" }} />} {menu?.icon && <span className='icon-wrapper'>{menu?.icon}</span>}<span>{menu?.name}</span></div>
             {isOpen && children && <div className='inner-section'>
                 {children}
