@@ -1,7 +1,7 @@
 import React from 'react'
 import "./styles.scss"
 import MenuIcons from '../../../assests/sibebar-icons/menu-icon'
-import { Link, createSearchParams, useSearchParams } from 'react-router-dom'
+import { createSearchParams, useSearchParams } from 'react-router-dom'
 
 const SideMenuBar = ({ menu }) => {
 
