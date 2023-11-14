@@ -2,8 +2,15 @@
     padding: 5px;
 
     .navigation-btn {
+        cursor: pointer;
         color: #fff;
         text-decoration: none;
+        background-color: unset;
+        border: unset;
+        margin: 0 5px;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: 'Fira Code', monospace;
     }
 
     .inner-icon-section {

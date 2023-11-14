@@ -35,6 +35,12 @@
 
         .right-pane {
             height: 100%;
+            text-align: center;
+
+            .float-avatar-wrapper {
+                position: relative;
+                // .avatar-container {}
+            }
         }
     }
 }

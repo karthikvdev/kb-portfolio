@@ -6,6 +6,7 @@ import MailIcon from '../../assests/sibebar-icons/mail-icon'
 import PhoneIcon from '../../assests/sibebar-icons/phone-icon'
 import { NAMES } from '../../common/constants'
 import { Editor } from '@monaco-editor/react'
+import { useSearchParams } from 'react-router-dom'
 
 const sidebar = [{
     name: "personal-info",
@@ -60,12 +61,13 @@ const sidebar = [{
     }]
 }]
 const About = () => {
+    const [searchParams] = useSearchParams();
     const rTabs = (str) => str.trim().replace(/^ {4}/gm, "");
     const code = rTabs(`
     // A sample react code snippets.
-      asdasdsad
-      
+      // asdasdsad ${searchParams.get("to")}   
   `)
+
     return (
         <div>
             <Editor

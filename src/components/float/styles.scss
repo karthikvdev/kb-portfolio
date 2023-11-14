@@ -1,0 +1,87 @@
+.float-container {
+    position: absolute;
+    inset: 0;
+
+    .float-section-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
+        .float-icons {
+            max-width: 54px;
+            width: 100%;
+            aspect-ratio: 1/1;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            animation-name: floating;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            margin-left: 30px;
+            margin-top: 5px;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .icon-1 {
+            position: relative;
+            right: 50px;
+        }
+
+        .icon-2 {
+            position: relative;
+            top: 30px;
+            left: 30px;
+        }
+
+        .icon-3 {
+            position: relative;
+            top: 30px;
+        }
+
+        .icon-4 {
+            position: relative;
+            top: 60px;
+        }
+
+        .icon-5 {
+            position: relative;
+            top: 50px;
+
+        }
+
+        .icon-6 {
+            position: relative;
+            bottom: 30px;
+            right: 30px;
+        }
+
+        .icon-7 {
+            position: relative;
+            top: 30px;
+            left: 50px;
+        }
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
