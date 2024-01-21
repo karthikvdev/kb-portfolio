@@ -1,0 +1,39 @@
+#skills {
+    margin: 5% 10%;
+
+    .title-container {
+        text-align: center;
+        margin: 1% 0;
+
+        .title {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .description {
+
+            color: #A7A7A7;
+            font-size: 1.5em;
+        }
+    }
+
+    .tools-container {
+        margin-top: 5%;
+    }
+
+    .tech-stack-icons-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        row-gap: 10%;
+
+        .icon-container {
+            text-align: center;
+
+            svg {
+                height: 150px;
+                width: 150px;
+            }
+        }
+    }
+
+}

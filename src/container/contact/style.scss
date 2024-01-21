@@ -1,0 +1,46 @@
+#contact-me {
+    margin: 0 10%;
+    padding: 5%;
+
+    .contact-container {
+        display: grid;
+        grid-template-columns: 30% 70%;
+
+        .name {
+            cursor: pointer;
+            font-size: 2.5em;
+        }
+
+        .contact-details-section {
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+
+            a {
+                font-size: 1.25em;
+                color: #fff;
+            }
+        }
+    }
+
+    .button-container {
+        padding-top: 5%;
+        text-align: center;
+
+        button {
+            background-color: #4D5BCE;
+            padding: 20px;
+            color: #fff;
+            font-size: 1.5em;
+            outline: 0;
+            border: 0;
+            border-radius: 5px;
+            cursor: pointer;
+
+            a {
+                text-decoration: none;
+                color: unset;
+            }
+        }
+    }
+}
