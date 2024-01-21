@@ -1,0 +1,58 @@
+.project-card {
+    width: 100%;
+    max-width: 325px;
+    border-radius: 20px;
+    height: 100%;
+    background-color: #363636;
+
+    .thumbnail-container {
+        img {
+            width: 100%;
+        }
+    }
+
+    .project-info {
+        padding: 5%;
+
+        .project-title {
+            margin: 0;
+            padding-bottom: 5%;
+            font-size: 28px;
+        }
+
+        .project-description {
+            margin-top: 0;
+        }
+
+        .project-tech-stack {
+            .label {
+                font-weight: 600;
+            }
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3%;
+
+            .link {
+                color: #fff;
+                display: flex;
+                align-items: center;
+            }
+
+            .live-preview {
+                svg {
+                    width: 25px;
+                }
+            }
+
+            .view-code {
+                svg {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,13 @@
 .main-container {
     display: grid;
     grid-template-columns: 20% 1fr;
+    height: calc(100vh - 94px);
     overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.body-container {
+    height: calc(100vh - 94px);
+    overflow: auto;
+    scroll-behavior: smooth;
 }

@@ -1,0 +1,31 @@
+#projects {
+    padding: 3% 0;
+    margin: 0 10%;
+
+    .title-container {
+        text-align: center;
+        margin: 1% 0;
+
+        .title {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .description {
+
+            color: #A7A7A7;
+            font-size: 1.5em;
+        }
+    }
+
+    .tools-container {
+        margin-top: 5%;
+    }
+
+    .projects-list-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 5%;
+        place-items: center;
+    }
+}
