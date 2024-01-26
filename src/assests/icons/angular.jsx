@@ -11,7 +11,7 @@ const AngularIcon = ({ theme }) => {
           <path d="M19.1736 4.07699L10.1051 24.1416L13.4928 24.0843L15.3134 19.558H23.4486L25.4421 24.1416L28.68 24.1989L19.1736 4.07699ZM19.1967 10.5055L22.2617 16.8766H16.5002L19.1967 10.5055Z" fill="white" />
         </g>
         <defs>
-          <filter id="filter0_d_1_5519" x="0.597076" y="0.444443" width="37.4988" height="39.1111" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <filter id="filter0_d_1_5519" x="0.597076" y="0.444443" width="37.4988" height="39.1111" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
             <feFlood floodOpacity={0} result="BackgroundImageFix" />
             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
             <feOffset dy="4" />
@@ -37,8 +37,8 @@ const AngularIcon = ({ theme }) => {
             <path d="M28.1736 16.077L19.1051 36.1416L22.4928 36.0843L24.3134 31.558H32.4486L34.4421 36.1416L37.68 36.1989L28.1736 16.077ZM28.1967 22.5055L31.2617 28.8766H25.5002L28.1967 22.5055Z" fill="white" />
           </g>
           <defs>
-            <filter id="filter0_d_1_5518" x="9.59708" y="12.4444" width="37.4988" height="39.1111" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <filter id="filter0_d_1_5518" x="9.59708" y="12.4444" width="37.4988" height="39.1111" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
               <feOffset dy="4" />
               <feGaussianBlur stdDeviation="2" />

@@ -1,31 +1,85 @@
 .footer-container {
     display: grid;
-    grid-template-columns: 10% 15% 60% 15%;
+    grid-template-columns: 10% 35% 40% 15%;
     color: #607B96;
 
     .center-menu {
-        border: 0.50px #1E2D3D solid;
         display: grid;
         padding: unset;
-        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-columns: repeat(6, 16.66%);
         width: 100%;
+
+        .sub-menu {
+            padding: 10px;
+            color: #607B96;
+            border-right: 0.50px #1E2D3D solid;
+            text-decoration: none;
+        }
     }
-    .icon-container{
+
+    .icon-container {
         display: flex;
         align-items: center;
         justify-content: center;
+
+        &:hover {
+            color: aliceblue;
+
+            path {
+                fill: aliceblue;
+            }
+        }
     }
-    .github-menu{
+
+    .github-menu {
         display: flex;
         align-items: center;
         gap: 10px;
         justify-content: center;
+
+        &:hover {
+            color: aliceblue;
+
+            path {
+                fill: aliceblue;
+            }
+        }
     }
 
     .menu {
         border: 0.50px #1E2D3D solid;
         padding: 10px;
-        color: #607B96 !important;
+        color: #607B96;
         text-decoration: none;
+    }
+}
+
+@media (max-width: 1300px) {
+    .footer-container {
+        grid-template-columns: 15% 35% 35% 15%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer-container {
+        grid-template-columns: 15% 45% 15% 25%;
+    }
+}
+
+@media (max-width: 852px) {
+    .footer-container {
+        grid-template-columns: 83.34% 16.66%;
+
+        .find-me {
+            display: none;
+        }
+
+        .empty-menu {
+            display: none;
+        }
+
+        .github-name {
+            display: none;
+        }
     }
 }

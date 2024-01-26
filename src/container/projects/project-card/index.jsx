@@ -1,14 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './style.scss'
 import { Link } from 'react-router-dom'
 import GitHubIcon from '../../../assests/icons/github'
-import { THEME } from '../../../common/constants'
 import UrlLinks from '../../../assests/icons/urllinks'
+import { AppContext } from '../../../context'
 
 const ProjectCard = ({ thumbnail, title, description, techstacks, url, repoLink }) => {
-    const theme = THEME.DARK;
+    const { theme } = useContext(AppContext)
+
     return (
-        <div className='project-card'>
+        <div className={`${theme} project-card`}>
             <div className='thumbnail-container'>
                 <img src={thumbnail} alt={title} />
             </div>

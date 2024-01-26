@@ -24,16 +24,62 @@
     .tech-stack-icons-container {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        row-gap: 10%;
 
         .icon-container {
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .tech-name {
+                display: none;
+            }
 
             svg {
                 height: 150px;
                 width: 150px;
             }
+
+            &:hover {
+                svg {
+                    cursor: pointer;
+                    -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
+                }
+
+                .tech-name {
+                    display: inline;
+                }
+            }
         }
     }
 
+    @media (max-width: 950px) {
+        .tech-stack-icons-container {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+    }
+
+    @media (max-width: 760px) {
+        .tech-stack-icons-container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+    }
+
+    @media (max-width: 600px) {
+        .tech-stack-icons-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+    }
+
+    @media (max-width: 375px) {
+        .tech-stack-icons-container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+    }
 }

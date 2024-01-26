@@ -4,6 +4,8 @@
     border-radius: 20px;
     height: 100%;
     background-color: #363636;
+    box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.20);
+
 
     .thumbnail-container {
         img {
@@ -39,6 +41,7 @@
                 color: #fff;
                 display: flex;
                 align-items: center;
+                padding: 1% 0;
             }
 
             .live-preview {
@@ -53,6 +56,23 @@
                     height: 35px;
                 }
             }
+        }
+
+        @media (max-width: 600px) {
+            .nav-links {
+                flex-direction: column;
+            }
+
+        }
+    }
+}
+
+.LIGHT {
+    background-color: #fff;
+
+    .nav-links {
+        .link {
+            color: #000 !important;
         }
     }
 }
