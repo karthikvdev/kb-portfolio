@@ -9,4 +9,4 @@ const PhoneIcon = () => {
     )
 }
 
-export default PhoneIcon
+export default PhoneIcon;

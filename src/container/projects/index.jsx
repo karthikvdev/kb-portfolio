@@ -66,8 +66,9 @@ const Projects = () => {
                 <p className='description'>Things I've build so far</p>
             </div>
             <div className='projects-list-container'>
-                {projectArr?.map((project) =>
+                {projectArr?.map((project, index) =>
                     <ProjectCard
+                        key={index}
                         thumbnail={project?.thumbnail}
                         title={project?.title}
                         description={project?.description}
