@@ -13,7 +13,7 @@ export const NAMES = {
 }
 export const URLS = {
     GITHUB: "https://github.com/karthikvdev",
-    LINKEDIN: "",
+    LINKEDIN: "https://www.linkedin.com/in/karthik-balaji-v/",
     FACEBOOK: "https://www.facebook.com/karthik.buttoski.007",
     TWITTER: "https://twitter.com/karthikBalaji26",
     INSTAGRAM: "https://www.instagram.com/karthikbalaji_26/",
