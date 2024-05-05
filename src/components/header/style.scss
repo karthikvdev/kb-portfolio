@@ -39,9 +39,11 @@
         padding: 10px;
         color: #607B96;
         text-decoration: none;
+        border-right: 0 !important;
+        border-left: 0 !important;
 
         &:hover {
-            color: aliceblue;
+            color: #4D5BCE;
         }
     }
 
