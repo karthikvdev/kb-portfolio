@@ -37,7 +37,7 @@ const Header = () => {
             </div>
             <div className='menu toggle-theme'>
                 <span className='theme-btn' onClick={() => handleOnToggle(!isDarkTheme)}>
-                    <ThemeToggle theme={theme ? THEME.DARK : THEME.LIGHT} />
+                    <ThemeToggle theme={theme} />
                 </span>
             </div>
         </div>

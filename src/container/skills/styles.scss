@@ -1,85 +1,84 @@
 #skills {
-    margin: 5% 10%;
+  margin: 5% 10%;
 
-    .title-container {
-        text-align: center;
-        margin: 1% 0;
+  .title-container {
+    text-align: center;
+    margin: 50px 0;
 
-        .title {
-            font-size: 2.5em;
-            margin: 0;
-        }
-
-        .description {
-
-            color: #A7A7A7;
-            font-size: 1.5em;
-        }
+    .title {
+      font-size: 2.5em;
+      margin: 0;
     }
 
-    .tools-container {
-        margin-top: 5%;
+    .description {
+      color: #a7a7a7;
+      font-size: 1.5em;
     }
+  }
 
+  .tools-container {
+    margin-top: 5%;
+  }
+
+  .tech-stack-icons-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    .icon-container {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 160px;
+
+      .tech-name {
+        height: 0px;
+        transition: all 0.25s ease;
+        overflow: hidden;
+      }
+
+      svg {
+        transition: all 0.25s ease;
+        height: 150px;
+        width: 150px;
+      }
+
+      &:hover {
+        svg {
+          cursor: pointer;
+          -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+        }
+
+        .tech-name {
+          height: 21px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 950px) {
     .tech-stack-icons-container {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-
-        .icon-container {
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            .tech-name {
-                display: none;
-            }
-
-            svg {
-                height: 150px;
-                width: 150px;
-            }
-
-            &:hover {
-                svg {
-                    cursor: pointer;
-                    -webkit-transform: scale(1.1);
-                    transform: scale(1.1);
-                }
-
-                .tech-name {
-                    display: inline;
-                }
-            }
-        }
+      grid-template-columns: repeat(4, 1fr);
     }
+  }
 
-    @media (max-width: 950px) {
-        .tech-stack-icons-container {
-            grid-template-columns: repeat(4, 1fr);
-        }
-
+  @media (max-width: 760px) {
+    .tech-stack-icons-container {
+      grid-template-columns: repeat(3, 1fr);
     }
+  }
 
-    @media (max-width: 760px) {
-        .tech-stack-icons-container {
-            grid-template-columns: repeat(3, 1fr);
-        }
-
+  @media (max-width: 600px) {
+    .tech-stack-icons-container {
+      grid-template-columns: repeat(2, 1fr);
     }
+  }
 
-    @media (max-width: 600px) {
-        .tech-stack-icons-container {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
+  @media (max-width: 375px) {
+    .tech-stack-icons-container {
+      grid-template-columns: repeat(1, 1fr);
     }
-
-    @media (max-width: 375px) {
-        .tech-stack-icons-container {
-            grid-template-columns: repeat(1, 1fr);
-        }
-
-    }
+  }
 }
