@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -23,23 +23,22 @@ code {
   background-color: #fea55f;
 }
 
+:root {
+  --primary-color: ;
+  --secondary-color: ;
+  --background-color: ;
+}
 
 .LIGHT {
   background-color: #fff;
   color: #011627;
 
-  .menu {
-    border: 0.5px #d9d9d9 solid !important
-  }
-
-  .center-menu {
-    border: 0.5px #d9d9d9 solid !important
-  }
-
+  .footer-container,
+  .menu,
+  .center-menu,
   .sub-menu {
-    border-right: 0.5px #d9d9d9 solid !important
+    border-color: #d9d9d9 !important;
   }
-
 }
 
 .DARK {
