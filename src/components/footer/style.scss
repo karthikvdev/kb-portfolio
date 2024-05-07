@@ -1,85 +1,86 @@
 .footer-container {
+  display: grid;
+  grid-template-columns: 10% 35% 40% 15%;
+  color: #607b96;
+  border-top: 1px solid #1e2d3d;
+
+  .center-menu {
     display: grid;
-    grid-template-columns: 10% 35% 40% 15%;
-    color: #607B96;
+    padding: unset;
+    grid-template-columns: repeat(6, 16.66%);
+    width: 100%;
 
-    .center-menu {
-        display: grid;
-        padding: unset;
-        grid-template-columns: repeat(6, 16.66%);
-        width: 100%;
-
-        .sub-menu {
-            padding: 10px;
-            color: #607B96;
-            border-right: 0.50px #1E2D3D solid;
-            text-decoration: none;
-        }
+    .sub-menu {
+      padding: 10px;
+      color: #607b96;
+      border-right: 0.5px #1e2d3d solid;
+      text-decoration: none;
     }
+  }
 
-    .icon-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-        &:hover {
-            color: #4D5BCE;
+    &:hover {
+      color: #4d5bce;
 
-            path {
-                fill: #4D5BCE;
-            }
-        }
+      path {
+        fill: #4d5bce;
+      }
     }
+  }
 
-    .github-menu {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        justify-content: center;
+  .github-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
 
-        &:hover {
-            color: #4D5BCE;
+    &:hover {
+      color: #4d5bce;
 
-            path {
-                fill: #4D5BCE;
-            }
-        }
+      path {
+        fill: #4d5bce;
+      }
     }
+  }
 
-    .menu {
-        border: 0.50px #1E2D3D solid;
-        padding: 10px;
-        color: #607B96;
-        text-decoration: none;
-    }
+  .menu {
+    border-right: 1px #1e2d3d solid;
+    padding: 10px;
+    color: #607b96;
+    text-decoration: none;
+  }
 }
 
 @media (max-width: 1300px) {
-    .footer-container {
-        grid-template-columns: 15% 35% 35% 15%;
-    }
+  .footer-container {
+    grid-template-columns: 15% 35% 35% 15%;
+  }
 }
 
 @media (max-width: 1200px) {
-    .footer-container {
-        grid-template-columns: 15% 45% 15% 25%;
-    }
+  .footer-container {
+    grid-template-columns: 15% 45% 15% 25%;
+  }
 }
 
 @media (max-width: 852px) {
-    .footer-container {
-        grid-template-columns: 83.34% 16.66%;
+  .footer-container {
+    grid-template-columns: 83.34% 16.66%;
 
-        .find-me {
-            display: none;
-        }
-
-        .empty-menu {
-            display: none;
-        }
-
-        .github-name {
-            display: none;
-        }
+    .find-me {
+      display: none;
     }
+
+    .empty-menu {
+      display: none;
+    }
+
+    .github-name {
+      display: none;
+    }
+  }
 }
