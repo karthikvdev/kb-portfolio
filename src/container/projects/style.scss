@@ -1,45 +1,29 @@
 #projects {
-    padding: 3% 0;
-    margin: 0 10%;
+  padding: 3% 0;
+  margin: 0 10%;
 
-    .title-container {
-        text-align: center;
-        margin: 1% 0;
+  .title-container {
+    text-align: center;
+    margin: 1% 0;
 
-        .title {
-            font-size: 2.5em;
-            margin: 0;
-        }
-
-        .description {
-
-            color: #A7A7A7;
-            font-size: 1.5em;
-        }
+    .title {
+      font-size: 2.5em;
+      margin: 0;
     }
 
-    .tools-container {
-        margin-top: 5%;
+    .description {
+      color: #a7a7a7;
+      font-size: 1.5em;
     }
+  }
 
-    .projects-list-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        row-gap: 25px;
-        place-items: center;
-    }
+  .tools-container {
+    margin-top: 5%;
+  }
 
-
-    @media (max-width: 1400px) {
-        .projects-list-container {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-
-    @media (max-width: 850px) {
-        .projects-list-container {
-            grid-template-columns: 1fr;
-            row-gap: 20px;
-        }
-    }
+  .projects-list-container {
+    display: grid;
+    gap: 35px;
+    place-items: center;
+  }
 }

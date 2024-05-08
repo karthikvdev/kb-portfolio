@@ -1,19 +1,12 @@
 .main-container {
   display: grid;
   grid-template-columns: 20% 1fr;
-  height: calc(100vh - 94px);
+  height: 100vh;
   overflow: auto;
   scroll-behavior: smooth;
 }
 
 .body-container {
-  height: calc(100dvh - 89px);
   overflow: auto;
   scroll-behavior: smooth;
-}
-
-@media (max-width: 700px) {
-  .body-container {
-    height: calc(100vh - 93px);
-  }
 }
