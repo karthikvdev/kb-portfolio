@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import './style.scss'
-import { Link } from 'react-router-dom'
-import GitHubIcon from '../../../assests/icons/github'
-import UrlLinks from '../../../assests/icons/urllinks'
+// import { Link } from 'react-router-dom'
+// import GitHubIcon from '../../../assests/icons/github'
+// import UrlLinks from '../../../assests/icons/urllinks'
 import { AppContext } from '../../../context'
 
 const ProjectCard = ({ thumbnail, title, description, techstacks, url, repoLink }) => {
