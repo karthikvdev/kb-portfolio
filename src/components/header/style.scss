@@ -11,6 +11,10 @@
     display: none;
   }
 
+  .hamburger-menu-container-menu {
+    display: none;
+  }
+
   .toggle-theme {
     padding: 5px !important;
     display: flex;
@@ -91,6 +95,9 @@
     .hamburger-menu {
       display: grid;
       place-items: center;
+    }
+    .hamburger-menu-container-menu{
+      display: grid;
     }
 
     .center-menu {
