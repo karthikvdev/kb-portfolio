@@ -1,6 +1,6 @@
 import React from 'react'
 
-const HamburgerMenu = () => {
+const HamburgerMenuIcon = () => {
     return (
         <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="SVGRepo_bgCarrier" strokeWidth="0" />
@@ -10,4 +10,4 @@ const HamburgerMenu = () => {
     )
 }
 
-export default HamburgerMenu;
+export default HamburgerMenuIcon;

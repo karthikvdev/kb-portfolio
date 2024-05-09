@@ -1,10 +1,10 @@
 import React, { useContext, useState } from 'react'
-import "./style.scss"
 import { NAMES, ROUTES, THEME, scrollToTop } from '../../common/constants'
 import { Link, useLocation } from 'react-router-dom'
-import HamburgerMenu from '../../assests/icons/hamburger-menu'
 import ThemeToggle from '../../assests/icons/theme-toggle'
 import { AppContext } from '../../context'
+import HamburgerMenu from '../hamburgerMenu'
+import "./style.scss"
 
 const Header = () => {
     const { theme, setTheme } = useContext(AppContext);
@@ -16,10 +16,6 @@ const Header = () => {
         { label: "_projects", to: ROUTES.PROJECTS },
     ]
 
-    const handleOpenMenu = () => {
-        // A function to open popup for header menu.
-    }
-
     const handleOnToggle = (darkTheme) => {
         localStorage?.setItem("theme", darkTheme ? THEME.DARK : THEME.LIGHT);
         setTheme(darkTheme ? THEME.DARK : THEME.LIGHT);
@@ -28,7 +24,7 @@ const Header = () => {
 
     return (
         <div className='header-container'>
-            <div className='menu hamburger-menu' onClick={handleOpenMenu}>
+            <div className='menu hamburger-menu'>
                 <HamburgerMenu />
             </div>
             <Link className='menu' to={ROUTES.HOME} onClick={scrollToTop}>{NAMES.USER_NAME}</Link>
