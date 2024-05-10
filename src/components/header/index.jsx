@@ -29,7 +29,7 @@ const Header = () => {
     return (
         <div className='header-container'>
             <div className='menu hamburger-menu' onClick={handleOpenMenu}>
-                <HamburgerMenu />
+                {/* <HamburgerMenu /> */}
             </div>
             <Link className='menu' to={ROUTES.HOME} onClick={scrollToTop}>{NAMES.USER_NAME}</Link>
             <div className='center-menu text-align'>
