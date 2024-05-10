@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import "./style.scss"
 import { NAMES, ROUTES, THEME, scrollToTop } from '../../common/constants'
 import { Link, useLocation } from 'react-router-dom'
-import HamburgerMenu from '../../assests/icons/hamburger-menu'
+// import HamburgerMenu from '../../assests/icons/hamburger-menu'
 import ThemeToggle from '../../assests/icons/theme-toggle'
 import { AppContext } from '../../context'
 
