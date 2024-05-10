@@ -6,7 +6,6 @@ import Project2 from '../../assests/images/projects/2.png'
 import Project3 from '../../assests/images/projects/3.png'
 import Project4 from '../../assests/images/projects/4.png'
 import Project5 from '../../assests/images/projects/5.png'
-import Project6 from '../../assests/images/projects/6.png'
 
 const Projects = () => {
     const projectArr = [
@@ -20,7 +19,7 @@ const Projects = () => {
         },
         {
             thumbnail: Project2,
-            title: "Inventory management",
+            title: "Inventory Management",
             description: "This application was designed to help businesses to track, organise and oversee all of their inventory/stocks/goods, as well as their inventory-related processes. It will reduce man-made error and reduce human effort in tracking inventory levels,tracking product movement throughout the warehouse and determining whether all needed items are available for production.",
             techstacks: ["React", "ExpressJS", "MongoDB", "NodeJs"],
             url: "https://www.poorvika.com/",
@@ -28,8 +27,8 @@ const Projects = () => {
         },
         {
             thumbnail: Project3,
-            title: "Waymore",
-            description: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
+            title: "Marketing & CRM",
+            description: "This application was created to help the organisation retain ties and interactions with current and new consumers.This app Help sales staff rapidly view previous interactions and transactions before making a phone call.Provide support workers with the necessary background and contact information to provide excellent client service.Allow marketers to access information that can assist them target their advertising.",
             techstacks: ["Angular", "PHP", "SQL", "MongoDB", "NodeJs", "React"],
             url: "https://www.waymore.io/",
             repolink: "https://karthikbalaji-dev.web.app/"
@@ -48,14 +47,6 @@ const Projects = () => {
             description: "This application is built for school which enables teachers to monitor and create syllabus for each standard/class. The teacher can upload syllabus and track its completeness as and when required. The teacher can also create project works and solutions for students to assign. This will reduce the effort of teachers to repeat the same task every academic year.",
             techstacks: ["NextJS", "ExpressJS", "MongoDB", "NodeJs"],
             url: "https://thetopschool.com/",
-            repolink: "https://karthikbalaji-dev.web.app/"
-        },
-        {
-            thumbnail: Project6,
-            title: "Unipick",
-            description: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
-            techstacks: ["NextJS", "ExpressJS", "MongoDB", "NodeJs"],
-            url: "https://karthikbalaji-dev.web.app/",
             repolink: "https://karthikbalaji-dev.web.app/"
         }
     ]
